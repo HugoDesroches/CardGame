@@ -28,20 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnCreate = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.Message = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.Offline = new System.Windows.Forms.Button();
+            this.btnDeck = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnCreate
             // 
-            this.button1.Location = new System.Drawing.Point(38, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 28);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnCreate.Location = new System.Drawing.Point(38, 31);
+            this.BtnCreate.Name = "BtnCreate";
+            this.BtnCreate.Size = new System.Drawing.Size(56, 28);
+            this.BtnCreate.TabIndex = 0;
+            this.BtnCreate.Text = "Create";
+            this.BtnCreate.UseVisualStyleBackColor = true;
+            this.BtnCreate.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -53,36 +55,49 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Message
+            // Offline
             // 
-            this.Message.AutoSize = true;
-            this.Message.Location = new System.Drawing.Point(150, 65);
-            this.Message.Name = "Message";
-            this.Message.Size = new System.Drawing.Size(50, 13);
-            this.Message.TabIndex = 2;
-            this.Message.Text = "Message";
+            this.Offline.Location = new System.Drawing.Point(38, 143);
+            this.Offline.Name = "Offline";
+            this.Offline.Size = new System.Drawing.Size(56, 23);
+            this.Offline.TabIndex = 5;
+            this.Offline.Text = "Offline";
+            this.Offline.UseVisualStyleBackColor = true;
+            this.Offline.Click += new System.EventHandler(this.Offline_Click);
+            // 
+            // btnDeck
+            // 
+            this.btnDeck.Location = new System.Drawing.Point(38, 186);
+            this.btnDeck.Name = "btnDeck";
+            this.btnDeck.Size = new System.Drawing.Size(56, 23);
+            this.btnDeck.TabIndex = 6;
+            this.btnDeck.Text = "Deck";
+            this.btnDeck.UseVisualStyleBackColor = true;
+            this.btnDeck.Click += new System.EventHandler(this.btnDeck_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Message);
+            this.Controls.Add(this.btnDeck);
+            this.Controls.Add(this.Offline);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnCreate);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnCreate;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label Message;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button Offline;
+        private System.Windows.Forms.Button btnDeck;
     }
 }
 
