@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace CardGame
 {
+    [Serializable]
     class Tool
     {
         public static Object ByteArrayToObject(byte[] arrBytes)
@@ -19,7 +20,7 @@ namespace CardGame
                 memStream.Write(arrBytes, 0, arrBytes.Length);
                 memStream.Seek(0, SeekOrigin.Begin);
                 memStream.Position = 0;
-                var obj = binForm.Deserialize(memStream);
+                ObjectSend obj = (ObjectSend)binForm.Deserialize(memStream);
                 return obj;
             }
         }

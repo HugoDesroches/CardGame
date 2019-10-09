@@ -492,7 +492,7 @@ namespace CardGame
 
         private void SelectEmplacement_Click(object sender, System.EventArgs e)
         {
-            if (CardSelected.Tag != null && CardSelected.Tag != "")
+            if (CardSelected.Tag != null && CardSelected.Tag.ToString() != "")
             {
                 var found = false;
                 foreach (var element in Cards.Controls)
@@ -551,7 +551,7 @@ namespace CardGame
               
                 if (((GroupBox)element).Tag.ToString() == tag)
                 {
-                    if(CardSelected.Tag != null && CardSelected.Tag == tag)
+                    if(CardSelected.Tag != null && CardSelected.Tag.ToString() == tag)
                     {
                         ((GroupBox)element).Top = 0;
                         CardSelected = new GroupBox();

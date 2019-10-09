@@ -11,5 +11,10 @@ namespace CardGame
     {
         public string message = "";
         public bool IsMyTurn = false;
+        public int IdeoPoint = 0;
+        public List<Card> PlayerDeck;
+        public List<Emplacement> EmplacementsList;
+        public List<Emplacement> OtherPlayerPlacement;
+        public List<Card> CardInHand;
     }
 }

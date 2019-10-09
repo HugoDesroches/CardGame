@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animation.cs" />
+    <Compile Include="Card.cs" />
     <Compile Include="Deck.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +73,7 @@
     </Compile>
     <Compile Include="GameObject.cs" />
     <Compile Include="ObjectSend.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tool.cs" />
@@ -116,6 +118,8 @@
     </Content>
     <Content Include="Img\1image.PNG" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
